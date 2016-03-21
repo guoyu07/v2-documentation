@@ -16,7 +16,7 @@ _Pro tip: don't forget use to `grunt` or `gulp` to get immediate feedback of you
 ## Basic customisation
 
 The simplest way to customize how your JHipster application looks like is by
-overriding CSS styles in `src/main/webapp/assets/{{ site.url }}/images/styles/main.css` if you don't use
+overriding CSS styles in `src/main/webapp/assets/{{ site.url }}/v2-documentation/images/styles/main.css` if you don't use
 Sass or in `src/main/scss/main.scss` if you do.
 
 With Sass you can go further by combining Bootstrap-sass mixins to create your own classes.

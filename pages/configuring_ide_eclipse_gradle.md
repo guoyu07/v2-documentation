@@ -12,7 +12,7 @@ sitemap:
 # <i class="fa fa-keyboard-o"></i> Configuring Eclipse with Gradle
 
 To get full gradle support in eclipse you should install the [buildship plugin](https://gradle.org/eclipse/).
-Configuring the [Javascript]({{ site.url }}/configuring-ide-eclipse/) side you can follow the instructions for maven.
+Configuring the [Javascript]({{ site.url }}/v2-documentation/configuring-ide-eclipse/) side you can follow the instructions for maven.
 
 ## 1. Import your project as a Gradle project
 
@@ -21,9 +21,9 @@ Configuring the [Javascript]({{ site.url }}/configuring-ide-eclipse/) side you c
 - Select your projects root directory
 - Click on ``Next`` and finish the wizard
 
-![Import]({{ site.url }}/images/configuring_ide_eclipse_gradle_1.png)
+![Import]({{ site.url }}/v2-documentation/images/configuring_ide_eclipse_gradle_1.png)
 
-![Select]({{ site.url }}/images/configuring_ide_eclipse_gradle_2.png)
+![Select]({{ site.url }}/v2-documentation/images/configuring_ide_eclipse_gradle_2.png)
 
 ## 2. Add apt generated source folder to build path
 
@@ -39,6 +39,6 @@ Therefore you need to remove it from eclipse's resource filter setting.
 
 Make sure the new source folder contains the correctly generated mapper implementations when running JHipster via eclipse.
 
-![Exclude]({{ site.url }}/images/configuring_ide_eclipse_gradle_3.png)
+![Exclude]({{ site.url }}/v2-documentation/images/configuring_ide_eclipse_gradle_3.png)
 
-![Buildpath]({{ site.url }}/images/configuring_ide_eclipse_gradle_4.png)
+![Buildpath]({{ site.url }}/v2-documentation/images/configuring_ide_eclipse_gradle_4.png)

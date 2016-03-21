@@ -11,11 +11,11 @@ sitemap:
 
 # <i class="fa fa-sitemap"></i> Managing relationships
 
-When JPA is used, the [entity sub-generator]({{ site.url }}/creating-an-entity/) can create relationships between entities.
+When JPA is used, the [entity sub-generator]({{ site.url }}/v2-documentation/creating-an-entity/) can create relationships between entities.
 
 ## Presentation
 
-Relationships only work when JPA is used. If you choose to use [Cassandra]({{ site.url }}/using-cassandra/) or [MongoDB]({{ site.url }}/using-mongodb/), they won't be available.
+Relationships only work when JPA is used. If you choose to use [Cassandra]({{ site.url }}/v2-documentation/using-cassandra/) or [MongoDB]({{ site.url }}/v2-documentation/using-mongodb/), they won't be available.
 
 A relationship works between two entities, and JHipster will generate the code for:
 
@@ -29,8 +29,8 @@ This page describes how to create relationships with JHipster using the standard
 
 In that case, two options are available:
 
-- [JHipster UML]({{ site.url }}/jhipster-uml/), which allows you to use an UML editor.
-- [JDL Studio]({{ site.url }}/jdl-studio/), our online tool to create entities and relationships using our domain-specific language.
+- [JHipster UML]({{ site.url }}/v2-documentation/jhipster-uml/), which allows you to use an UML editor.
+- [JDL Studio]({{ site.url }}/v2-documentation/jdl-studio/), our online tool to create entities and relationships using our domain-specific language.
 
 ## Available relationships
 
@@ -128,7 +128,7 @@ You have two solutions for this:
 - Do a bidirectional mapping, and use it without modification: this is our recommended approach, as it is much simpler
 - Do a bidirectional mapping, and then modify it to transform it into a unidirectional mapping:
     - Remove the "mappedBy" attribute on your `@OneToMany` annotation
-    - Generate the required join table: you can do a `mvn liquibase:diff` to generate that table, see the [documentation about using Liquibase diff]({{ site.url }}/development/)
+    - Generate the required join table: you can do a `mvn liquibase:diff` to generate that table, see the [documentation about using Liquibase diff]({{ site.url }}/v2-documentation/development/)
 
 
 ## <a name="4"></a> A unidirectional one-to-one relationship

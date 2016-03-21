@@ -22,8 +22,8 @@ Each stack comes with its own dependency management (artifacts, npm) with potent
 
 Some of the instructions below may help you also to setup your development environment.
 
-- [Linux server]({{ site.url }}/setting-up-ci-linux/)
-- [Windows server]({{ site.url }}/setting-up-ci-windows/)
+- [Linux server]({{ site.url }}/v2-documentation/setting-up-ci-linux/)
+- [Windows server]({{ site.url }}/v2-documentation/setting-up-ci-windows/)
 
 ## Configuring Javascript tests
 

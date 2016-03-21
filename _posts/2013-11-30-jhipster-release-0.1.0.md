@@ -6,7 +6,7 @@ title: Release 0.1.0
 JHipster release 0.1.0
 ==================
 
-JHipster now has a new home on [http://jhipster.github.io/](http://jhipster.github.io/)!
+JHipster now has a new home on [http://{{ site.url }}/v2-documentation/](http://{{ site.url }}/v2-documentation/)!
 
 We have also moved the JHipster github repository to the newly created JHipster Github organization:
 

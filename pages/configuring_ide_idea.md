@@ -25,21 +25,21 @@ sitemap:
     - `node_modules/` and
     - `src/main/webapp/dist` (the `dist` folder will be created when you generate a production build)
 
-![Exclude]({{ site.url }}/images/configuring_ide_idea_1.png)
+![Exclude]({{ site.url }}/v2-documentation/images/configuring_ide_idea_1.png)
 
 ## Java Code Support
 
 To add code support to many of the JHipster modules from a new project first go to `File → Project Structure`.
 
-![Project Structure]({{ site.url }}/images/configuring_ide_idea_2.png)
+![Project Structure]({{ site.url }}/v2-documentation/images/configuring_ide_idea_2.png)
 
 Then go to the Modules tab, click on the `+` button, and then click on "Spring" to add Spring code assistance to your project.
 
-![Spring]({{ site.url }}/images/configuring_ide_idea_3.png)
+![Spring]({{ site.url }}/v2-documentation/images/configuring_ide_idea_3.png)
 
 It will tell you there are unmapped Spring configuration files, click on the `+` sign on the  bottom right (not the original one) and select all the Spring files that belong to your project, just clicking the folder is enough to select everything.
 
-![Spring Application Context]({{ site.url }}/images/configuring_ide_idea_4.png)
+![Spring Application Context]({{ site.url }}/v2-documentation/images/configuring_ide_idea_4.png)
 
 After that click `OK`, and Spring should be configured with proper code assistance.
 
@@ -51,11 +51,11 @@ You should now have Java support for most of the codebase. You have to repeat th
 
 Go and open `IntelliJ IDEA → Preferences...`.
 
-![Settings]({{ site.url }}/images/configuring_ide_idea_5.png)
+![Settings]({{ site.url }}/v2-documentation/images/configuring_ide_idea_5.png)
 
 Navigate to `Languages & Frameworks → Javascript → Bower` (or type "Bower" on the top search bar)
 
-![Navigate to Bower]({{ site.url }}/images/configuring_ide_idea_6.png)
+![Navigate to Bower]({{ site.url }}/v2-documentation/images/configuring_ide_idea_6.png)
 
 Point to your `bower.json`, which is located at the root of your project. The project's libraries, like Angular.js, should be automatically recognized.
 
