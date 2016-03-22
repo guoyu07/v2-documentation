@@ -13,7 +13,7 @@ sitemap:
 
 The JHipster development team follows some coding policies. You can see them as "best practices" or "guidelines". They are enforced on the project itself, not on the generated code: if you just use JHipster to generate your project, you absolutely do not have to follow them!
 
-Those policies are followed by the [development team]({{ site.url }}/v2-documentation/team/), and you should follow them if you submit a Pull Request.
+Those policies are followed by the [development team]({{ site.url }}/team/), and you should follow them if you submit a Pull Request.
 
 ## Policy 0: Policies are voted by the development team
 

@@ -66,26 +66,15 @@
                         <ol class="breadcrumb navbar-breadcrumb">
                             <li class="active"></li>
                         </ol>
-                        {% if page.home == true %}
                         <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                             <i class="fa fa-th icon"></i>
                         </button>
-                        {% endif %}
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a><i class="fa fa-exclamation-triangle"></i> JHipster v2.x (old) documentation</a>
-                        </li>
-                        <li>
-                            <a href="http://jhipster.github.io/">Current documentation</a>
-                        <li>
-                    </ul>
-
-                    {% if page.home == true %}
                     <ul class="nav navbar-nav navbar-right">
-                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs light">
                             <i class="fa fa-times icon"></i>
                         </button>
+                        {% if page.home == true %}
                         <li class="page-scroll">
                             <a href="#about">About</a>
                         </li>
@@ -98,11 +87,23 @@
                         <li class="page-scroll">
                             <a href="#modules">Modules</a>
                         </li>
+                        <li class="page-scroll hidden-xs">
+                            <a class="light">|</a>
+                        </li>
+                        {% endif %}
+						{% if page.home != true %}
+						<li class="active">
+                            <a class="navlink"><i class="fa fa-exclamation-triangle"></i> JHipster v2.x (old) documentation</a>
+                        </li>
+						{% endif %}
                         <li class="">
-                            <a href="https://github.com/jhipster/generator-jhipster" class="dropdown-toggle" target="_blank" role="button"><i class="fa fa-github fa-2x"></i></a>
+                            <a href="{{ site.url }}/" class="dropdown-toggle navlink" target="_blank" role="button">Current Docs</a>
+                        </li>
+                        <li class="">
+                            <a href="https://github.com/jhipster/generator-jhipster" class="dropdown-toggle navlink" target="_blank" role="button"><i class="fa fa-github fa-2x"></i></a>
                         </li>
                     </ul>
-                    {% endif %}
+
                 </div>
             </nav>
             <div class="side-menu sidebar-inverse">
@@ -137,7 +138,7 @@
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
                                             <li {% if '/tech-stack/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/tech-stack/"><i class="fa fa-fw fa-stack-overflow"></i> Technology stack</a></li>
-                                            <li {% if '/presentation' == page.url %}class="active" {% endif %}><a href="/presentation" target="_blank"><i class="fa fa-fw fa-desktop"></i> Official JHipster slides</a></li>
+                                            <li {% if '/presentation' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/presentation" target="_blank"><i class="fa fa-fw fa-desktop"></i> Official JHipster slides</a></li>
                                             <li {% if '/screenshots/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/screenshots/"><i class="fa fa-fw fa-picture-o"></i> JHipster in 5 screenshots</a></li>
                                             <li {% if '/video-tutorial/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/video-tutorial/"><i class="fa fa-fw fa-film"></i> Video tutorial (20 minutes)</a></li>
                                         </ul>
@@ -249,9 +250,9 @@
                                 <div id="dropdown-9" class="panel-collapse collapse" style="height: 0px;">
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
-                                            <li {% if '/help/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/help/"><i class="fa fa-fw fa-users"></i> Community help</a></li>
-                                            <li {% if '/consultintg/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/consulting/"><i class="fa fa-fw fa-user-md"></i> Professional help</a></li>
-                                            <li {% if '/training/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/v2-documentation/training/"><i class="fa fa-fw fa-graduation-cap"></i> Training</a></li>
+                                            <li {% if '/help/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/help/"><i class="fa fa-fw fa-users"></i> Community help</a></li>
+                                            <li {% if '/consultintg/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/consulting/"><i class="fa fa-fw fa-user-md"></i> Professional help</a></li>
+                                            <li {% if '/training/' == page.url %}class="active" {% endif %}><a href="{{ site.url }}/training/"><i class="fa fa-fw fa-graduation-cap"></i> Training</a></li>
                                         </ul>
                                      </div>
                                 </div>
@@ -282,12 +283,12 @@
                                 <div class="row">
                                     <div class="footer-col col-md-4">
                                         <div class="col-md-6 col-sm-12">
-                                            <h5 class="text-left"><i class="fa fa-coffee fa-fw"></i> <a class="link" href="{{ site.url }}/v2-documentation/team/">Team</a></h5>
-                                            <h5 class="text-left"><i class="fa fa-pencil fa-fw"></i> <a class="link" href="{{ site.url }}/v2-documentation/artwork">Artwork</a></h5>
+                                            <h5 class="text-left"><i class="fa fa-coffee fa-fw"></i> <a class="link" href="{{ site.url }}/team/">Team</a></h5>
+                                            <h5 class="text-left"><i class="fa fa-pencil fa-fw"></i> <a class="link" href="{{ site.url }}/artwork">Artwork</a></h5>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
-                                            <h5 class="text-left"><i class="fa fa-gavel fa-fw"></i> <a class="link" href="{{ site.url }}/v2-documentation/policies/">Policies</a></h5>
-                                            <h5 class="text-left"><i class="fa fa-gift fa-fw"></i> <a class="link" href="{{ site.url }}/v2-documentation/thanks/">Thanks</a></h5>
+                                            <h5 class="text-left"><i class="fa fa-gavel fa-fw"></i> <a class="link" href="{{ site.url }}/policies/">Policies</a></h5>
+                                            <h5 class="text-left"><i class="fa fa-gift fa-fw"></i> <a class="link" href="{{ site.url }}/thanks/">Thanks</a></h5>
                                         </div>
                                     </div>
                                     <div class="footer-col col-md-4">
